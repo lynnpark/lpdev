@@ -12,3 +12,7 @@ body {
 .App > h1 {
   color: rgb(255, 111, 97);
 }
+
+.App > hr {
+  border-color: #b5bab6;
+}
