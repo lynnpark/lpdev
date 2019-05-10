@@ -1,2 +1,0 @@
-# lpdev
-Created with CodeSandbox

@@ -1,0 +1,14 @@
+body {
+  background-color: rgb(36, 41, 46);
+  color: white;
+  padding: 16px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.App {
+  display: block;
+}
+
+.App > h1 {
+  color: rgb(255, 111, 97);
+}
