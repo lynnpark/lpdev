@@ -9,7 +9,7 @@ function App() {
       <h1>lynn park</h1>
       <h3>lynnpark.dev@gmail.com</h3>
       <hr />
-      <p>more stuff coming soon</p>
+      <p>more stuff coming soon!!!</p>
     </div>
   );
 }
