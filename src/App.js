@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Header from "./components/Header";
+import ThingsILike from "./components/ThingsILike";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
             fell in love with React two years ago. Coding makes me happy!
           </p>
         </BlurbWrapper>
+        <ThingsILike/>
       </ContentWrapper>
     </div>
   );
