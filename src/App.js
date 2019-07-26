@@ -1,24 +1,26 @@
 import React from "react";
 import styled from "styled-components";
 
+import Header from "./components/Header";
+
 export default function App() {
   return (
     <div className="App">
       <ContentWrapper>
-        <h1>lynn park</h1>
-        <h3>lynnpark.dev@gmail.com</h3>
+        <Header />
         <hr />
         <BlurbWrapper>
-          <p>Hello there beautiful people ✨✨✨</p>
+          <p>
+            Hello there beautiful people
+            <span role="img" aria-label="sparkle">
+              ✨✨✨
+            </span>
+          </p>
           <p>
             I'm a full-stack dev, but my focus has been on the front-end since I
-            discovered React two years ago. Coding makes me happy!
+            fell in love with React two years ago. Coding makes me happy!
           </p>
         </BlurbWrapper>
-
-        <h3 style={{ color: "rgb(255, 111, 97)" }}>Things I like...</h3>
-        <p>🎣 React Hooks</p>
-        <p>🏦 Behavioral Economics</p>
       </ContentWrapper>
     </div>
   );
