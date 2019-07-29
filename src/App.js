@@ -12,9 +12,15 @@ export default function App() {
         <hr />
         <BlurbWrapper>
           <p>
-            Hello there beautiful people
-            <span role="img" aria-label="sparkle">
-              ✨✨✨
+            Hello there beautiful people{" "}
+            <span role="img" aria-label="emoji-sparkle">
+              ✨
+            </span>
+            <span role="img" aria-label="emoji-sparkle">
+              ✨
+            </span>
+            <span role="img" aria-label="emoji-sparkle">
+              ✨
             </span>
           </p>
           <p>
@@ -22,7 +28,7 @@ export default function App() {
             fell in love with React two years ago. Coding makes me happy!
           </p>
         </BlurbWrapper>
-        <ThingsILike/>
+        <ThingsILike />
       </ContentWrapper>
     </div>
   );
