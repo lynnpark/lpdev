@@ -23,12 +23,7 @@ export default function App() {
               ✨
             </span>
           </p>
-          <p>
-            I'm a full-stack dev, but my focus has been on the front-end since I
-            fell in love with React two years ago. Coding makes me happy!
-          </p>
         </BlurbWrapper>
-        <ThingsILike />
       </ContentWrapper>
     </div>
   );
