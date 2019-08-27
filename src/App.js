@@ -1,15 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 import Header from "./components/Header";
-import ThingsILike from "./components/ThingsILike";
 
 export default function App() {
+  const [content, setContent] = useState("main");
+
   return (
     <div className="App">
       <ContentWrapper>
         <Header />
-        <hr />
         <BlurbWrapper>
           <p>
             Hello there beautiful people{" "}
