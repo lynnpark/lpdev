@@ -4,26 +4,19 @@ import styled from "styled-components";
 import Header from "./components/Header";
 
 export default function App() {
-  const [content, setContent] = useState("main");
+  //const [content, setContent] = useState("main");
 
   return (
     <div className="App">
       <ContentWrapper>
-        <Header />
-        <BlurbWrapper>
-          <p>
-            Hello there beautiful people{" "}
-            <span role="img" aria-label="emoji-sparkle">
-              ✨
-            </span>
-            <span role="img" aria-label="emoji-sparkle">
-              ✨
-            </span>
-            <span role="img" aria-label="emoji-sparkle">
-              ✨
-            </span>
-          </p>
-        </BlurbWrapper>
+        <Header showIcons={false} />
+        <Emailh2
+          onClick={() => {
+            window.location = "mailto:lynnpark.dev@gmail.com";
+          }}
+        >
+          lynnpark.dev@gmail.com
+        </Emailh2>
       </ContentWrapper>
     </div>
   );
@@ -37,7 +30,10 @@ const ContentWrapper = styled.div`
   padding: 2.625rem 1.3125rem;
 `;
 
-const BlurbWrapper = styled.div`
-  line-height: 1.75;
-  padding: 8px 0;
+const Emailh2 = styled.h2`
+  cursor: pointer;
+  &:hover {
+    color: #e0e0e0;
+    text-decoration: rgb(255, 111, 97);
+  }
 `;

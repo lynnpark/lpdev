@@ -3,24 +3,26 @@ import styled from "styled-components";
 import { Email, Twit } from "../assets/svgs/";
 import Nav from "./Nav";
 
-export default function Header() {
+export default function Header(props) {
   return (
     <HeaderWrapper>
       <NameAndNavWrapper>
         <Name>lynn park</Name>
-        <Nav />
+        {/* <Nav /> */}
       </NameAndNavWrapper>
 
-      <IconsWrapper>
-        <Email
-          fill="white"
-          size="24"
-          onClick={() => {
-            window.location = "mailto:lynnpark.dev@gmail.com";
-          }}
-        />
-        <Twit fill="white" size="24" />
-      </IconsWrapper>
+      {props.showIcons && (
+        <IconsWrapper>
+          <Email
+            fill="white"
+            size="24"
+            onClick={() => {
+              window.location = "mailto:lynnpark.dev@gmail.com";
+            }}
+          />
+          <Twit fill="white" size="24" />
+        </IconsWrapper>
+      )}
     </HeaderWrapper>
   );
 }
