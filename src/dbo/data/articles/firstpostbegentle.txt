@@ -1,1 +1,0 @@
-For my first post on my very own personal website, it seems appropriate to write about Netlify, which made lynnpark.dev possible.
